@@ -83,5 +83,6 @@ jobs:
       - name: Deploy with Terraform
         run: |
           terraform init
+          terraform refresh
           terraform apply -auto-approve
         working-directory: ${{ env.TFE_DIR }}
