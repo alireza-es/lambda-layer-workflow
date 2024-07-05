@@ -1,7 +1,9 @@
 name: Deploy Layers v2
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 env:
   AWS_REGION: "us-east-1"
